@@ -1,10 +1,10 @@
 import * as React from "react"; 
 import styles from "./LoginForm.module.scss";
  
-export default function LoginForm({ cards = []}) {
+export default function LoginForm() {
 
   return (
- 
+    <div className={classNames(styles.wrapper)}>
      <div className="form">
      <form>
        <div className="input-container">
@@ -19,6 +19,7 @@ export default function LoginForm({ cards = []}) {
          <input type="submit" />
 
      </form>
+   </div> 
    </div> 
   );
 }
